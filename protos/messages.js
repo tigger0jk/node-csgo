@@ -1,6 +1,6 @@
-var CSGO = require("../index");
+Messages = {};
 
-CSGO.GCConnectionStatus = {
+Messages.GCConnectionStatus = {
 	GCConnectionStatus_HAVE_SESSION: 0,
 	GCConnectionStatus_GC_GOING_DOWN: 1,
 	GCConnectionStatus_NO_SESSION: 2,
@@ -8,7 +8,7 @@ CSGO.GCConnectionStatus = {
 	GCConnectionStatus_NO_STEAM: 4,
 }
 
-CSGO.EGCSystemMsg = {
+Messages.EGCSystemMsg = {
 	k_EGCMsgInvalid: 0,
 	k_EGCMsgMulti: 1,
 	k_EGCMsgGenericReply: 10,
@@ -86,7 +86,7 @@ CSGO.EGCSystemMsg = {
 	k_EGCMsgCheckFriendshipResponse: 506,
 };
 
-CSGO.ESOMsg = {
+Messages.ESOMsg = {
 	k_ESOMsg_Create: 21,
 	k_ESOMsg_Update: 22,
 	k_ESOMsg_Destroy: 23,
@@ -97,7 +97,7 @@ CSGO.ESOMsg = {
 	k_ESOMsg_CacheSubscriptionRefresh: 28,
 };
 
-CSGO.EGCBaseClientMsg = {
+Messages.EGCBaseClientMsg = {
 	k_EMsgGCClientWelcome: 4004,
 	k_EMsgGCServerWelcome: 4005,
 	k_EMsgGCClientHello: 4006,
@@ -106,7 +106,7 @@ CSGO.EGCBaseClientMsg = {
 	k_EMsgGCServerConnectionStatus: 4010,
 };
 
-CSGO.EGCToGCMsg = {
+Messages.EGCToGCMsg = {
 	k_EGCToGCMsgMasterAck: 150,
 	k_EGCToGCMsgMasterAckResponse: 151,
 	k_EGCToGCMsgRouted: 152,
@@ -117,7 +117,7 @@ CSGO.EGCToGCMsg = {
 	k_EGCToGCMsgMasterStartupComplete: 157,
 };
 
-CSGO.ECSGOCMsg = {
+Messages.ECSGOCMsg = {
 	k_EMsgGCCStrike15_v2_Base: 9100,
 	k_EMsgGCCStrike15_v2_MatchmakingStart: 9101,
 	k_EMsgGCCStrike15_v2_MatchmakingStop: 9102,
@@ -183,7 +183,7 @@ CSGO.ECSGOCMsg = {
 	k_EMsgGCCStrike15_v2_ClientRequestJoinServerData: 9164,
 	k_EMsgGCCStrike15_v2_ClientRequestNewMission: 9165,
 };
-CSGO.EMsg = {
+Messages.EMsg = {
 	Invalid: 0,
 	Multi: 1,
 	BaseGeneral: 100,
@@ -1912,3 +1912,5 @@ CSGO.EMsg = {
 	ClientVoiceCallPreAuthorize: 9800,
 	ClientVoiceCallPreAuthorizeResponse: 9801
 };
+
+exports.Messages = Messages;
