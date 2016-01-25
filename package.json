@@ -1,6 +1,6 @@
 {
   "name": "csgo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "dependencies": {
     "protobufjs": "*",
     "deferred": "*",
@@ -8,7 +8,7 @@
     "bytebuffer": ">=3.5.5"
   },
   "peerDependencies": {
-    "steam": "1.1.0"
+    "steam": "1.4.0"
   },
   "engines": { 
     "node": ">0.12.9" 
